@@ -1,0 +1,27 @@
+form {
+  border: 1px solid #3de1ec;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  width: 310px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.buttonForm {
+  margin-left: 110px;
+  background-color: #3de1ec;
+  border: 1px solid #c1c0c0;
+  border-radius: 4px;
+  color: rgb(249, 246, 246);
+  width: 100px;
+  height: 30px;
+}
+
+.error {
+  border: 2px solid #eb0808;
+  color: #eb0808;
+  border-radius: 2px;
+  width: 200px;
+  padding: 1px 1px;
+}

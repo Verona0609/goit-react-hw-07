@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+
+  background-color: #ffff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 10px;
+}
+
+ul {
+}
