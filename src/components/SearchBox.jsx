@@ -6,15 +6,15 @@ const SearchBox = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectNameFilter);
 
-  const handleChange= (e)=>{
-    dispatch(changeFilter(e.target.value))
-  }
+  const handleChange = (e) => {
+    dispatch(changeFilter(e.target.value));
+  };
   return (
     <>
-      <label htmlFor="findContact">
-        Find contact by name
+      <label className={styles.title} htmlFor="findContact">
+        <b>FIND CONTACT BY NAME</b>
         <input
-          className={styles.input}
+          className={styles.searchinput}
           name="findContact"
           type="text"
           placeholder="Rosie Simpson"

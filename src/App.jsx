@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { useEffect } from "react";
 import { selectLoading, selectError } from "./redux/contactsSlice";
+
 /*  */
 const App = () => {
   const loading = useSelector(selectLoading);
@@ -17,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Phonebook</h1>
+      <h1>PHONEBOOK</h1>
       <ContactForm />
       <SearchBox />
       {loading && <p>Loading...</p>}

@@ -1,11 +1,12 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 
-/* import { nanoid } from "nanoid"; */
 import styles from "./ContactForm.module.css";
 
 import { useDispatch } from "react-redux";
 import { addContact } from "../redux/contactsOps";
+/* import { FaUser } from "react-icons/fa"; */
+
 /* const numberVal = /([0-9]{3})[0-9]{3}-[0-9]{4}/; */
 const validationSchema = Yup.object().shape({
   name: Yup.string()
@@ -41,7 +42,8 @@ const ContactForm = () => {
       <Form className={styles.form}>
         <div>
           <label className={styles.titel} htmlFor="name">
-            Name
+            
+            NAME
           </label>
           <Field className={styles.field} type="text" name="name"></Field>
           <ErrorMessage className={styles.error} name="name" component="span" />
@@ -49,7 +51,7 @@ const ContactForm = () => {
 
         <div>
           <label className={styles.titel} htmlFor="number">
-            Number
+            NUMBER
           </label>
           <Field className={styles.field} type="number" name="number"></Field>
           <ErrorMessage
@@ -60,7 +62,7 @@ const ContactForm = () => {
         </div>
 
         <button className={styles.buttonForm} type="submit">
-          Add contact
+          ADD CONTACT
         </button>
       </Form>
     </Formik>

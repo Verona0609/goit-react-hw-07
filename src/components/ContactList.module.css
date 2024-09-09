@@ -1,7 +1,9 @@
 ul {
   list-style-type: none; /* Видаляє маркери або нумерацію */
-  padding: 0; /* Видаляє внутрішні відступи */
+  padding: 0 50px 0 50px; /* Видаляє внутрішні відступи */
+
   margin: 0; /* Видаляє зовнішні відступи */
-  display: flex;
+  /* display: block; */
+
   gap: 10px;
 }
